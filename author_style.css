@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    background: radial-gradient(circle, #ffcccb, #ffe6e6);
+}
+
+.about-author {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hello {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contacts {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.calc {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.calc a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.calc a:hover {
+    color: #cfb4a1;
+}
+
+.photo img {
+  border-radius: 50%;
+  border: 3px solid #cfb4a1;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.photo img:hover {
+  transform: scale(1.1); /* Увеличение картинки при наведении */
+}

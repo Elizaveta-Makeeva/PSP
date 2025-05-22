@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    background: radial-gradient(circle, #bef574, #ccff99);
+}
+
+.about-task {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.task {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.task {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 600px; /* Ограничиваем ширину текста для удобства чтения */
+}
+
+.plan {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.plan h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.plan ul {
+    list-style-type: disc; /* Маркеры в виде точек */
+    padding-left: 20px;
+}
+
+.calc {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.calc a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.calc a:hover {
+    color: #cfb4a1;
+}
