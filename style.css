@@ -1,0 +1,199 @@
+body {
+  background: radial-gradient(circle, #f0f0f0, #d3d3d3);
+}
+
+.calc {
+  overflow: hidden;
+  background: none;
+  padding: 10px;
+  display: inline-block;
+  height: 100%;
+  margin-top: 200px;
+  margin-left: 42%;
+  margin-bottom: 12%;
+}
+
+.btn-change {
+  margin-right: 5px;           /* Отступ справа */
+  margin-top: 5px;             /* Отступ сверху */
+  width: 285px;                 /* Ширина кнопки */
+  height: 50px;                /* Высота кнопки */
+  border-radius: 34px;          /* Закругленные края */
+  border: 2px solid gray;      /* Темно-серая окантовка */
+  background: #c7ea46;         /* Цвет фона кнопки */
+  color: white;                /* Цвет текста */
+  font-size: 1.5rem;           /* Размер шрифта */
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; /* Шрифт */
+  cursor: pointer;             /* Указатель при наведении */
+  user-select: none;           /* Отключение выделения текста */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Плавность эффектов */
+}
+
+.btn-change:hover {
+  border-color: #cfb4a1;
+}
+
+.my-btn {
+  margin-right: 5px;           /* Отступ справа */
+  margin-top: 5px;             /* Отступ сверху */
+  width: 50px;                 /* Ширина кнопки */
+  height: 50px;                /* Высота кнопки */
+  border-radius: 50%;          /* Закругленные края */
+  border: 2px solid gray;      /* Темно-серая окантовка */
+  background: #fec2d6;         /* Цвет фона кнопки */
+  color: white;                /* Цвет текста */
+  font-size: 1.5rem;           /* Размер шрифта */
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; /* Шрифт */
+  cursor: pointer;             /* Указатель при наведении */
+  user-select: none;           /* Отключение выделения текста */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Плавность эффектов */
+}
+
+
+/* hover - это состояние элемента, когда на него наведен курсор */
+.my-btn:hover {
+  border-color: #cfb4a1;
+}
+
+/* селектор для кнопок первостепенных операций */
+.my-btn.primary {
+  background: #c7ea46;
+}
+
+/* селектор для кнопок второстепенных операций */
+.my-btn.secondary {
+  background: #c7ea46;
+}
+
+
+/* селектор для кнопки расчета выражения (=) */
+.my-btn.execute {
+  width: 50px;          /* сделаем кнопку шире других */
+  border-radius: 34px;   /* подкорректируем округлость */
+}
+
+/* Стили для кнопки "=" с разной яркостью */
+.my-btn.execute.brightness-0 {
+  filter: brightness(0.5);
+}
+
+.my-btn.execute.brightness-1 {
+  filter: brightness(0.6);
+}
+
+.my-btn.execute.brightness-2 {
+  filter: brightness(0.7);
+}
+
+.my-btn.execute.brightness-3 {
+  filter: brightness(0.8);
+}
+
+.my-btn.execute.brightness-4 {
+  filter: brightness(0.9);
+}
+
+.my-btn.execute.brightness-5 {
+  filter: brightness(1.0);
+}
+
+.my-btn.execute.brightness-6 {
+  filter: brightness(1.1);
+}
+
+.my-btn.execute.brightness-7 {
+  filter: brightness(1.2);
+}
+
+.my-btn.execute.brightness-8 {
+  filter: brightness(1.3);
+}
+
+.my-btn.execute.brightness-9 {
+  filter: brightness(1.4);
+}
+
+/* селектор для поля вывода результата */
+.result {
+  width: 277px; /* Можно задать ширину панели */
+  background-color: #fec2d6; /* Цвет фона */
+  border: 1px solid #ccc; /* Граница */
+  border-radius: 15px; /* Скругленные углы */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для красоты */
+  color: #ffff; /* Цвет текста */
+  font-size: 2.5rem;
+  border: 2px solid gray;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+.top-bar{
+  display: flex;
+  justify-content: center; /* Центрирование содержимого */
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo-img{
+  position: absolute;
+}
+
+.address{
+  position: absolute;
+  left: 20px;
+  font-size: 1 rem;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  cursor: pointer;
+}
+
+.address a:hover {
+  color: #cfb4a1;
+}
+
+.address a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.author-info {
+  position: absolute;
+  right: 20px;
+  font-size: 1rem;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  cursor: pointer;
+}
+
+.author-info a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.author-info a:hover {
+  color: #cfb4a1;
+}
+
+.task-info {
+  position: absolute;
+  right: 130px;
+  font-size: 1rem;
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  cursor: pointer;
+}
+
+.task-info a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.task-info a:hover {
+  color: #cfb4a1;
+}
+
+
